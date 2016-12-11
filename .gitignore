@@ -3,3 +3,13 @@
 
 # Packaging
 .cask
+
+#.emacs.d
+.emacs.d/auto-save-list/
+.emacs.d/backups/
+.emacs.d/elpa/
+.emacs.d/image-dired/
+.emacs./snippets/
+*.el~
+*.sh~
+places

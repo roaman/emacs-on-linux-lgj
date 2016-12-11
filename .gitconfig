@@ -1,0 +1,5 @@
+[user]
+	name = LiGuojun
+	email = liguojun@hi1918.com
+[core]
+	editor = emacs -q
