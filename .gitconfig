@@ -3,3 +3,5 @@
 	email = liguojun518@gmail.com
 [core]
 	editor = emacs -q
+[rerere]
+	enabled = true
