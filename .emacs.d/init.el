@@ -24,6 +24,7 @@
     py-autopep8				;for Python, format as PEP8 when save file
     ;; C/C++
     ;; Java
+    magit                               ;for git
 ))
 
 (mapc #'(lambda (package)
@@ -72,3 +73,17 @@
 ;; (add-hook 'text-mode-hook (lambda ( ) (refill-mode 1)))
 
 (global-linum-mode t) ;; enablne line numbers globally
+(custom-set-variables
+ ;; custom-set-variables was added by Custom.
+ ;; If you edit it by hand, you could mess it up, so be careful.
+ ;; Your init file should contain only one such instance.
+ ;; If there is more than one, they won't work right.
+ '(package-selected-packages
+   (quote
+    (magit comment-dwim-2 zenburn-theme py-autopep8 material-theme flycheck elpy better-defaults))))
+(custom-set-faces
+ ;; custom-set-faces was added by Custom.
+ ;; If you edit it by hand, you could mess it up, so be careful.
+ ;; Your init file should contain only one such instance.
+ ;; If there is more than one, they won't work right.
+ )
