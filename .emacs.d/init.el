@@ -24,7 +24,7 @@
     py-autopep8				;for Python, format as PEP8 when save file
     ;; C/C++
     ;; Java
-    magit                               ;for git
+    magit                               ;require emacs 24.4 above and git version 1.9.2 above
 ))
 
 (mapc #'(lambda (package)
@@ -44,7 +44,7 @@
 (require 'setup-faces)
 (require 'setup-local)
 (require 'setup-help)
-
+(require 'setup-org)
 
 ;; (require 'setup-editing)
 ;; (require 'setup-convenience)
@@ -73,6 +73,7 @@
 ;; (add-hook 'text-mode-hook (lambda ( ) (refill-mode 1)))
 
 (global-linum-mode t) ;; enablne line numbers globally
+
 (custom-set-variables
  ;; custom-set-variables was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.
@@ -80,7 +81,7 @@
  ;; If there is more than one, they won't work right.
  '(package-selected-packages
    (quote
-    (magit comment-dwim-2 zenburn-theme py-autopep8 material-theme flycheck elpy better-defaults))))
+    (org zenburn-theme py-autopep8 material-theme magit flycheck elpy comment-dwim-2 better-defaults))))
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.
